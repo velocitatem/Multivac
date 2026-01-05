@@ -5,9 +5,9 @@ Multivac turns structural-entropy analysis of Python projects into a time-series
 ## Installation
 
 ```bash
-pip install .
+pip install git+https://github.com/velocitatem/Multivac.git
 # or, to isolate the CLI
-pipx install .
+pipx install git+https://github.com/velocitatem/Multivac.git
 ```
 
 Multivac requires Python 3.9+ and the `git` executable available on PATH.
