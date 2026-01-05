@@ -316,8 +316,8 @@ def build_parser() -> argparse.ArgumentParser:
     serve_parser.add_argument(
         "--port",
         type=int,
-        default=5000,
-        help="Port for the dashboard (default: 5000)",
+        default=5800,
+        help="Port for the dashboard (default: 5800)",
     )
     serve_parser.add_argument(
         "-f",

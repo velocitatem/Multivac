@@ -26,7 +26,7 @@ Build or update the commit timeline (creates `.multivac/entropy_history.json` by
 multivac timeline --repo . --summary
 ```
 
-Launch the lightweight dashboard (http://127.0.0.1:5000):
+Launch the lightweight dashboard (http://127.0.0.1:5800):
 
 ```bash
 multivac serve --repo . --follow
@@ -82,7 +82,7 @@ The command appends a Markdown table to the workflow summary and stores artefact
 ```bash
 python -m multivac analyze . --json
 python -m multivac timeline --repo . --recompute --summary
-python -m multivac serve --repo . --follow --interval 5
+python -m multivac serve --repo . --follow --interval 5 --port 5800
 ```
 
 History files live under `.multivac/` by default. Delete the directory if you want to reset results (`multivac timeline --recompute` recreates it).
